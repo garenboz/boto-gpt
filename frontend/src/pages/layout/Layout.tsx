@@ -35,11 +35,15 @@ const Layout = () => {
         <div className={styles.layout}>
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
-                   
+                    <Stack horizontal verticalAlign="center">
+                        
+                        <Link to="/" className={styles.headerTitleContainer}>
+                            <h1 className={styles.headerTitle}>Azure AI</h1>
+                        </Link>
+                    </Stack>
                 </div>
             </header>
-            <Outlet />
-            
+            <Outlet />            
         </div>
     );
 };
